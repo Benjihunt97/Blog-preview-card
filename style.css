@@ -1,0 +1,160 @@
+/*
+  custom properties
+*/
+:root {
+  --clr-primary: hsl(47, 88%, 63%);
+  --clr-secondary: hsl(0, 0%, 100%);
+  --clr-accent: hsl(0, 0%, 50%);
+  --clr-base: hsl(0, 0%, 7%);
+}
+
+/*
+  prefix styling
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  
+  background: var(--clr-primary);
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img,
+svg {
+  display: block;
+}
+
+/*
+  card container
+*/
+.card {
+  width: 80%;
+  
+  border-radius: 15px;
+  
+  overflow: hidden;
+  box-shadow: 8px 8px 2px 5px var(--clr-base);
+  border: 1px solid var(--clr-base);
+}
+
+/*
+  article image
+*/
+.hero-img {
+  width: 100%;
+}
+
+/*
+  card text
+*/
+.card-text {
+  padding: .875rem;
+  
+  background: var(--clr-secondary);
+}
+
+/*
+  tag
+*/
+.tag {
+  
+  width: fit-content;
+  
+  font-size: 0.875rem;
+  font-weight: 600;
+  
+  padding: 4px 12px;
+  
+  border-radius: 5px;
+  
+  background: var(--clr-primary);
+}
+
+/*
+  date
+*/
+.date {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--clr-accent);
+  
+  margin-top: 10px;
+}
+
+/*
+  title
+*/
+.title {
+  font-weight: 800;
+  font-size: 1.125rem;
+  
+  margin-top: 17px;
+}
+
+.title:hover {
+  color: var(--clr-primary);
+}
+
+/*
+  info
+*/
+.info {
+  font-size: 0.875rem;
+  
+  margin-block: 17px;
+}
+
+/*
+  user styling
+*/
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-img {
+  width: 45px;
+  height: 45px;
+}
+
+.username {
+  font-weight: 500;
+}
+
+/*
+  attribution styling
+*/
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: fit-content;
+  
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/*
+  screen size adjust card to max width
+*/
+@media (min-width: 640px){
+  .card {
+    max-width: 300px;
+  }
+}
