@@ -43,8 +43,11 @@ svg {
   width: 80%;
   
   border-radius: 15px;
+
+  padding: 1rem;
   
   overflow: hidden;
+  background: white;
   box-shadow: 8px 8px 2px 5px var(--clr-base);
   border: 1px solid var(--clr-base);
 }
@@ -54,13 +57,15 @@ svg {
 */
 .hero-img {
   width: 100%;
+
+  border-radius: 6px;
+  margin-bottom: 10px;
 }
 
 /*
   card text
 */
 .card-text {
-  padding: .875rem;
   
   background: var(--clr-secondary);
 }
